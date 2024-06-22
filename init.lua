@@ -190,13 +190,6 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
--- [[ Theme Settings ]]
-
--- Enable light mode
--- vim.o.background = 'light'
-
--- Use Gruvbox theme
-vim.cmd 'colorscheme gruvbox'
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -373,6 +366,14 @@ require('lazy').setup({
           },
         },
       }
+
+
+      -- Enable light mode
+      -- vim.o.background = 'light'
+
+      -- Use Gruvbox theme
+      vim.cmd 'colorscheme gruvbox'
+
 
       -- Enable Telescope extensions if they are installed
       pcall(require('telescope').load_extension, 'fzf')
